@@ -1,6 +1,6 @@
 # IA aplicada a testes de software: Caderno temático com NotebookLM
 
-Projeto prático de portfólio focado em QA (Quality Assurance), explorando o uso de Inteligência Artificial no design e análise de testes de software.
+Este projeto foi desenvolvido com o objetivo de explorar, na prática, como a IA pode apoiar (e limitar) o trabalho de um QA.
 
 ## Sobre o projeto
 
@@ -55,81 +55,66 @@ A seguir, são apresentados exemplos reais de evolução de prompts e aprendizad
 
 ---
 
-### 3.1 Prompt inicial (Geração de casos de teste)
+### Exemplo 1 — Geração inicial
 
 **Prompt:**
 "Gere casos de teste funcionais para um sistema de login com validação de e-mail e senha"
 
 **Resultado:**
-- Casos de teste básicos
-- Foco em cenários positivos e negativos simples
+- Casos básicos com foco em cenários positivos e negativos
 - Uso de técnicas como Particionamento de equivalência e Análise de valor limite
 
-**Limitações identificadas:**
-- Ausência de cenários não funcionais
-- Falta de profundidade em segurança
+**Problemas identificados:**
+- Ausência de testes não funcionais
 - Dados de teste genéricos
 - Falta de critérios claros de validação
 
 ---
 
-### 3.2 Prompt refinado (Estruturação)
+### Exemplo 2 — Refinamento estrutural
 
 **Prompt:**
-"Gere casos de teste detalhados com pré-condições, passos e resultados esperados para um sistema de login"
+"Gere casos de teste detalhados com pré-condições, passos e resultados esperados"
 
 **Melhorias obtidas:**
 - Estrutura mais próxima de casos reais
-- Inclusão de pré-condições
-- Passos organizados
-- Resultados esperados mais claros
+- Inclusão de pré-condições e passos
 
-**Limitações persistentes:**
-- Ainda focado majoritariamente em testes funcionais
+**Limitações:**
+- Ainda focado em testes funcionais
 - Ausência de pós-condições
-- Falta de cobertura de atributos de qualidade
 
 ---
 
-### 3.3 Prompt de análise crítica
+### Exemplo 3 — Análise crítica
 
 **Prompt:**
-"Analise os casos de teste gerados anteriormente e identifique falhas, lacunas de cobertura e possíveis melhorias"
+"Analise os casos de teste e identifique falhas e lacunas"
 
-**Principais pontos identificados pela IA:**
-- Ausência de pós-condições
-- Critérios de passagem pouco explícitos
-- Dados de teste vagos
+**Principais achados:**
+- Falta de pós-condições
+- Dados vagos
 - Falta de rastreabilidade
-- Cobertura incompleta de limites superiores (Análise de valor limite)
 
-**Lacunas relevantes:**
-- Segurança (SQL Injection, XSS)
-- Usabilidade e acessibilidade
+**Lacunas identificadas:**
+- Segurança
 - Performance
-- Compatibilidade
-
-**Insight:**
-A IA é capaz de identificar problemas estruturais quando direcionada, mas depende diretamente da qualidade do prompt.
+- Usabilidade
 
 ---
 
-### 3.4 Prompt de refinamento avançado
+### Exemplo 4 — Refinamento avançado
 
 **Prompt:**
-"Refine os casos de teste anteriores incluindo cenários de segurança, edge cases avançados e melhorias na cobertura"
+"Refine os testes incluindo segurança, edge cases e cobertura ampliada"
 
 **Resultado:**
-- Inclusão de testes de segurança (SQL Injection, XSS)
-- Edge cases com análise de valor limite mais completo (limites superiores)
+- Inclusão de testes de SQL Injection e XSS
 - Testes de sessão e timeout
-- Cenários de performance (carga)
-- Testes de acessibilidade
+- Cenários de carga e acessibilidade
 
-**Evolução observada:**
-- Transição de testes básicos para abordagem mais profissional
-- Cobertura alinhada com ISO 25010
-- Melhor aderência a boas práticas de QA
+**Insight:**
+A qualidade dos testes evolui diretamente com o nível de detalhe do prompt.
 
 ---
 
@@ -253,7 +238,30 @@ A IA é eficiente para geração e escala, enquanto o QA humano é essencial par
 
 ---
 
-## 9. Conclusão
+## 9. Resultado final do projeto
+
+Ao final do processo iterativo com apoio da IA, foi possível consolidar uma abordagem mais completa de testes para o sistema de login, considerando:
+
+- Casos de teste funcionais estruturados (com pré-condições, passos e resultados esperados)
+- Inclusão de cenários de segurança (SQL Injection, XSS, bloqueio de conta)
+- Aplicação de Análise de valor limite (incluindo limites superiores)
+- Testes de sessão e timeout
+- Cenários de performance (carga de usuários simultâneos)
+- Verificações de usabilidade e acessibilidade
+
+Além disso, foram aplicadas boas práticas como:
+- Identificação de lacunas de cobertura
+- Refinamento iterativo dos testes
+- Consideração de atributos de qualidade baseados na ISO 25010
+
+O resultado final não é apenas um conjunto de testes, mas uma abordagem estruturada que combina:
+- geração assistida por IA
+- validação crítica humana
+- melhoria contínua baseada em análise
+
+---
+
+## 10. Conclusão
 
 Este projeto demonstrou que a Inteligência Artificial pode acelerar significativamente a geração e expansão de testes, mas não substitui o papel do QA.
 
