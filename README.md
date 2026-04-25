@@ -1,4 +1,4 @@
-# IA aplicada a testes de software: Caderno temático com NotebookLM
+# IA aplicada a testes de software: Engenharia de prompts e análise prática com NotebookLM
 
 Este projeto foi desenvolvido com o objetivo de explorar, na prática, como a IA pode apoiar (e limitar) o trabalho de um QA.
 
